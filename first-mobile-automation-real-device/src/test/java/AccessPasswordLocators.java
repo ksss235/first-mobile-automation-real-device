@@ -6,8 +6,6 @@ import java.time.Duration;
 
 public class AccessPasswordLocators {
     WebDriver driver;
-//    private By titleBox = By
-//            .xpath("//android.widget.TextView[@resource-id='kz.bcc.starbanking.stage:id/tvTitle']");
     private By secondTitleBox = By
             .xpath("//android.widget.TextView[@resource-id='kz.bcc.starbanking.stage:id/tvTitle' and @text='Повторите код доступа']");
     private By numPad = By
@@ -27,11 +25,6 @@ public class AccessPasswordLocators {
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.visibilityOfElementLocated(numPad));
     }
-//    public String getTitleText(){
-//        String resultTitleText = driver.findElement(titleBox).getText();
-//        return resultTitleText;
-//    }
-//    public String titleTextExpected = "Установите код доступа";
 
     private void digit1Click(){
         driver.findElement(digit1).click();

@@ -2,7 +2,6 @@ import io.appium.java_client.android.AndroidDriver;
 import java.net.MalformedURLException;
 import java.net.URL;
 import org.junit.After;
-//import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -40,8 +39,6 @@ public class MobileAutomation {
 
         AccessPasswordLocators accessPasswordLocators = new AccessPasswordLocators(driver);
         accessPasswordLocators.numPadWaiter();
-//        String resultTitleText = accessPasswordLocators.getTitleText();
-//        Assert.assertEquals("Установите код доступа expected", accessPasswordLocators.titleTextExpected, resultTitleText);
         accessPasswordLocators.accessPasswordEntering();
         accessPasswordLocators.secondAccessPasswordWait();
         accessPasswordLocators.accessPasswordEntering();
